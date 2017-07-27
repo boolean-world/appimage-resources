@@ -1,7 +1,4 @@
 .
-./.DirIcon
-./AppRun
-./qbittorrent.desktop
 ./usr
 ./usr/lib
 ./usr/lib/libtorrent-rasterbar.so.8
@@ -101,10 +98,7 @@
 ./usr/share/appdata
 ./usr/share/appdata/qbittorrent.appdata.xml
 ./usr/share/pixmaps
-./usr/share/pixmaps/opt-qt58-assistant.png
-./usr/share/pixmaps/opt-qt58-designer.png
 ./usr/share/pixmaps/qbittorrent.png
-./usr/share/pixmaps/opt-qt58-linguist.png
 ./qbittorrent.png
 ./opt
 ./opt/qt58
