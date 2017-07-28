@@ -1,0 +1,15 @@
+#!/bin/sh
+
+SELF_DIR="$(dirname "$(readlink -f "$0")")"
+LIBS_PATH="$SELF_DIR/opt/qt58/lib:$SELF_DIR/usr/lib:$SELF_DIR/usr/lib/x86_64-linux-gnu"
+
+if [ -z "$LD_LIBRARY_PATH" ]; then
+  LD_LIBRARY_PATH="$LIBS_PATH"
+else
+  LD_LIBRARY_PATH="$LIBS_PATH:$LD_LIBRARY_PATH"
+fi
+
+export LD_LIBRARY_PATH
+export QT_QPA_PLATFORM_PLUGIN_PATH="$SELF_DIR/opt/qt58/plugins"
+
+exec "$SELF_DIR/usr/bin/qbittorrent"
